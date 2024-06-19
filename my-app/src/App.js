@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+const newDate = new Date();
 
 export const App = () => {
 	return (
@@ -17,6 +18,7 @@ export const App = () => {
 				>
 					Learn React
 				</a>
+				<div className="date">Текущий год: {newDate.getFullYear()}</div>
 			</header>
 		</div>
 	);
